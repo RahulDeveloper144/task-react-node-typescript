@@ -112,6 +112,7 @@ export default function StudentList() {
             <tr>
               <th className="px-6 py-3 text-left font-semibold">Name</th>
               <th className="px-6 py-3 text-left font-semibold">Email</th>
+              <th className="px-6 py-3 text-left font-semibold">Phone</th>
               <th className="px-6 py-3 text-left font-semibold">Course</th>
               <th className="px-6 py-3 text-left font-semibold">Actions</th>
             </tr>
@@ -124,6 +125,7 @@ export default function StudentList() {
               >
                 <td className="px-6 py-3">{s.plain?.fullName ?? '—'}</td>
                 <td className="px-6 py-3">{s.plain?.email ?? '—'}</td>
+                <td className="px-6 py-3">{s.plain?.phone ?? '—'}</td>
                 <td className="px-6 py-3">{s.plain?.course ?? '—'}</td>
                 <td className="px-6 py-3 flex items-center gap-3">
                   <button
